@@ -490,6 +490,7 @@
     <Content Include="Views\ImageFile\Index.cshtml" />
     <Content Include="Views\ContactBlock\Index.cshtml" />
     <Content Include="Views\ArticlePage\Index.cshtml" />
+    <None Include="Properties\PublishProfiles\epiplayground - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
