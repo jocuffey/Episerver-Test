@@ -19,10 +19,12 @@ namespace EpiserverTest.Models.Pages
         public virtual ContentReference Image { get; set; }
 
         [Display(GroupName = Global.GroupNames.Contact)]
+        [UIHint(UIHint.PreviewableText)]
         public virtual string Phone { get; set; }
 
         [Display(GroupName = Global.GroupNames.Contact)]
         [EmailAddress]
+        [UIHint(UIHint.PreviewableText)]
         public virtual string Email { get; set; }
     }
 }
