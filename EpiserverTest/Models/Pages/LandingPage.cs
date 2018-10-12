@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using EpiserverTest.Business.Rendering;
 using EPiServer.Core;
 using EPiServer.DataAbstraction;
 using EPiServer.DataAnnotations;
@@ -18,6 +19,7 @@ namespace EpiserverTest.Models.Pages
             GroupName = SystemTabNames.Content,
             Order=310)]
         [CultureSpecific]
+        [MaxElements(15)]
         public virtual ContentArea MainContentArea { get; set; }
 
         public override void SetDefaultValues(ContentType contentType)
